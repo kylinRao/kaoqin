@@ -1,0 +1,102 @@
+[2018-01-08 00:56:41,960]INFO | run: 输入账号和密码，进行登录操作
+[2018-01-08 00:57:03,002]DEBUG | run: 【domain】:ics.chinasoftosg.com--【name】:portal_model--【value】:show
+[2018-01-08 00:57:03,003]DEBUG | run: 【domain】:ics.chinasoftosg.com--【name】:portal_presuuid--【value】:40289d743f0a2d14013f0a2f8e5c0001
+[2018-01-08 00:57:03,003]DEBUG | run: 【domain】:.chinasoftosg.com--【name】:ROLTPAToken--【value】:PExUUEFUb2tlbj48bm9kZT5SMUZyYW1ld29yazQuMDwvbm9kZT48dGltZT4xNTE1MzQ0MTk5NjUxPC90aW1lPjx1c2VyaWQ%2BNjgxMDQ8L3VzZXJpZD48cGVyc29udXVpZD40MDI4ODg5OTU1NzhmZTY1MDE1NTc5MDE2Njg3MDA3MDwvcGVyc29udXVpZD48c3lzaWQ%2BMjwvc3lzaWQ%2BPC9MVFBBVG9rZW4%2B
+[2018-01-08 00:57:03,003]DEBUG | run: 【domain】:ics.chinasoftosg.com--【name】:RoneUserName--【value】:68104
+[2018-01-08 00:57:03,003]DEBUG | run: 【domain】:ics.chinasoftosg.com--【name】:ispass--【value】:false
+[2018-01-08 00:57:03,003]DEBUG | run: 【domain】:ics.chinasoftosg.com--【name】:JSESSIONID--【value】:ECC4F2ED8C5DA408AAE87B19982AA666
+[2018-01-08 00:57:03,015]INFO | run: 如下cookie转换中：
+[2018-01-08 00:57:03,016]DEBUG | run: make_cookie working:domain:ics.chinasoftosg.com,name:portal_model,value:show
+[2018-01-08 00:57:03,016]DEBUG | run: make_cookie working:domain:ics.chinasoftosg.com,name:portal_presuuid,value:40289d743f0a2d14013f0a2f8e5c0001
+[2018-01-08 00:57:03,016]DEBUG | run: make_cookie working:domain:.chinasoftosg.com,name:ROLTPAToken,value:PExUUEFUb2tlbj48bm9kZT5SMUZyYW1ld29yazQuMDwvbm9kZT48dGltZT4xNTE1MzQ0MTk5NjUxPC90aW1lPjx1c2VyaWQ%2BNjgxMDQ8L3VzZXJpZD48cGVyc29udXVpZD40MDI4ODg5OTU1NzhmZTY1MDE1NTc5MDE2Njg3MDA3MDwvcGVyc29udXVpZD48c3lzaWQ%2BMjwvc3lzaWQ%2BPC9MVFBBVG9rZW4%2B
+[2018-01-08 00:57:03,016]DEBUG | run: make_cookie working:domain:ics.chinasoftosg.com,name:RoneUserName,value:68104
+[2018-01-08 00:57:03,016]DEBUG | run: make_cookie working:domain:ics.chinasoftosg.com,name:ispass,value:false
+[2018-01-08 00:57:03,016]DEBUG | run: make_cookie working:domain:ics.chinasoftosg.com,name:JSESSIONID,value:ECC4F2ED8C5DA408AAE87B19982AA666
+[2018-01-08 00:57:03,017]DEBUG | run: post 请求使用到的cookie信息如下：domain:.chinasoftosg.comname:JSESSIONID,value:ECC4F2ED8C5DA408AAE87B19982AA666
+[2018-01-08 00:57:03,017]DEBUG | run: post 请求使用到的cookie信息如下：domain:.chinasoftosg.comname:ROLTPAToken,value:PExUUEFUb2tlbj48bm9kZT5SMUZyYW1ld29yazQuMDwvbm9kZT48dGltZT4xNTE1MzQ0MTk5NjUxPC90aW1lPjx1c2VyaWQ%2BNjgxMDQ8L3VzZXJpZD48cGVyc29udXVpZD40MDI4ODg5OTU1NzhmZTY1MDE1NTc5MDE2Njg3MDA3MDwvcGVyc29udXVpZD48c3lzaWQ%2BMjwvc3lzaWQ%2BPC9MVFBBVG9rZW4%2B
+[2018-01-08 00:57:03,017]DEBUG | run: post 请求使用到的cookie信息如下：domain:.chinasoftosg.comname:RoneUserName,value:68104
+[2018-01-08 00:57:03,019]DEBUG | run: post 请求使用到的cookie信息如下：domain:.chinasoftosg.comname:ispass,value:false
+[2018-01-08 00:57:03,019]DEBUG | run: post 请求使用到的cookie信息如下：domain:.chinasoftosg.comname:portal_model,value:show
+[2018-01-08 00:57:03,019]DEBUG | run: post 请求使用到的cookie信息如下：domain:.chinasoftosg.comname:portal_presuuid,value:40289d743f0a2d14013f0a2f8e5c0001
+[2018-01-08 00:57:03,642]DEBUG | run: http请求的返回消息：
+[2018-01-08 00:57:03,644]DEBUG | run: 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript">
+var icon = "<img src=\"/console/skin/default/rone/images/common/warning.gif\" width=\"14\" height=\"14\" border=\"0\" align=\"absmiddle\">";
+var okicon = "<img src=\"/console/skin/default/rone/images/common/check_right.gif\" width=\"14\" height=\"14\" border=\"0\" align=\"absmiddle\">";
+var pagesize = 20;
+var land = "zh_CN";
+var imagePath = "/console/skin/default/rone/images/common/pointer.gif";
+var tabpath="/portal/layout/standard/tabpanel.jsp";
+var tabpathr1="";
+function correctPNG(){ 
+ var arVersion = navigator.appVersion.split("MSIE") 
+ var version = parseFloat(arVersion[1]) 
+ if ((version >= 5.5 && version <7) && (document.body.filters)) 
+ { 
+ for(var j=0; j<document.images.length; j++) 
+ { 
+ var img = document.images[j] 
+ var imgName = img.src.toUpperCase() 
+ if (imgName.substring(imgName.length-3, imgName.length) == "PNG") 
+ { 
+ var imgID = (img.id) ? "id='" + img.id + "' " : "" 
+ var imgClass = (img.className) ? "class='" + img.className + "' " : ""
+ var imgTitle = (img.title) ? "title='" + img.title + "' " : "title='" + img.alt + "' "
+ var imgStyle = "display:inline-block;" + img.style.cssText 
+ if (img.align == "left") imgStyle = "float:left;" + imgStyle 
+ if (img.align == "right") imgStyle = "float:right;" + imgStyle 
+ if (img.parentElement.href) imgStyle = "cursor:hand;" + imgStyle 
+ var strNewHTML = "<span " + imgID + imgClass + imgTitle 
+ + " style=\"" + "width:" + img.width + "px; height:" + img.height + "px;" + imgStyle + ";"
+ + "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader" 
+ + "(src=\'" + img.src + "\', sizingMethod='scale');\"></span>" 
+ img.outerHTML = strNewHTML 
+ j = j-1 
+ } 
+ } 
+ } 
+} 
+window.onload =correctPNG; 
+</script>
+<link rel="stylesheet" href="/console/skin/default/rone/style/scroll.css">
+</head>
+<font size="2">请稍等，程序正在加载... ... ...</font>
+
+<script language=javascript>
+ function init(){
+    var ua = navigator.userAgent;
+    var msieOffset = ua.indexOf("MSIE ");
+	if(msieOffset>=0){
+	  var msieVersion = parseFloat(ua.substring(msieOffset + 5, ua.indexOf(";", msieOffset)));
+	  if(msieVersion < 6){
+	     alert("请将您的IE升级到6.0或以上，否则会无法正常使用系统。");
+	  }
+	}	
+	window.location.replace("/SignOnServlet");
+ } 
+ init();
+</script>
+<body>
+</body>
+</html>
+
