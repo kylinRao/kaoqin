@@ -46,6 +46,10 @@ class downMusic:
 
 
 	def __init__(self,name,password,MAXDOWN ):
+		# os.system("rm -rf {files}".format(files=configParseControl.globalParam.phatomjsSreenShotDir+r"/*"))
+		self.subdir = time.strftime('%Y-%m-%d-%H-%M-%S',time.localtime(time.time()))
+		self.screenNowDir = os.path.join(configParseControl.globalParam.phatomjsSreenShotDir,r"{dir}".format(dir = self.subdir ))
+		os.mkdir(self.screenNowDir)
 		self.name=name
 		self.password = password
 		self.MAXDOWN = int(MAXDOWN)
@@ -85,34 +89,34 @@ class downMusic:
 
 
 
-		driver.get_screenshot_as_file(os.path.join(configParseControl.globalParam.phatomjsSreenShotDir,ur'登陆前.png'))
+		driver.get_screenshot_as_file(os.path.join(self.screenNowDir,ur'登陆前.png'))
 		driver.find_element_by_xpath('//*/input[@name="userName"]').send_keys(self.name)
 		driver.find_element_by_xpath('//*[@id="password"]').send_keys(self.password)
 		driver.find_element_by_xpath('//*[@onclick="return submitForm(false,false)"]').click()
 		time.sleep(3)
-		driver.get_screenshot_as_file(os.path.join(configParseControl.globalParam.phatomjsSreenShotDir,ur'登陆后.png'))
+		driver.get_screenshot_as_file(os.path.join(self.screenNowDir,ur'登陆后.png'))
 
 		self.logCookie(driver)
 		goodCookie = driver.get_cookies()
 
         #
-		# self.logger.info("点击id=op进入新OA页面")
-		# driver.find_element_by_xpath('//*[@id="OP"]/a').click()
-        #
-        #
-		# goodCookie = self.getRecentSignInDate(driver)
-		# time.sleep(3)
-        #
-        #
-		# phCookieList = driver.get_cookies()
-		# self.logCookie(driver)
-        #
-		# self.logger.info("phCookieList is:")
-		# for i in phCookieList:
-		# 	self.logger.info(type(i))
-		# 	self.logger.info(i)
-		# 	for c in i:
-		# 		self.logger.info(i['name'],i['value'])
+		self.logger.info("点击id=op进入新OA页面")
+		driver.find_element_by_xpath('//*[@id="OP"]/a').click()
+
+
+		goodCookie = self.getRecentSignInDate(driver)
+		time.sleep(3)
+
+
+		phCookieList = driver.get_cookies()
+		self.logCookie(driver)
+
+		self.logger.info("phCookieList is:")
+		for i in phCookieList:
+			self.logger.info(type(i))
+			self.logger.info(i)
+			for c in i:
+				self.logger.info(i['name'],i['value'])
         #
 		# driverG = driver
 
@@ -135,12 +139,12 @@ class downMusic:
 
 
 
-		driver.get_screenshot_as_file(os.path.join(configParseControl.globalParam.phatomjsSreenShotDir,ur'OP.png'))
+		driver.get_screenshot_as_file(os.path.join(self.screenNowDir,ur'OP.png'))
 		#print "考勤"
 		self.logger.info("进入考勤iframe")
 		driver.find_element_by_xpath('//*[@menuname="考勤"]').click()
 		time.sleep(10)
-		driver.get_screenshot_as_file(os.path.join(configParseControl.globalParam.phatomjsSreenShotDir,ur'考勤.png'))
+		driver.get_screenshot_as_file(os.path.join(self.screenNowDir,ur'考勤.png'))
 		self.logCookie(driver)
 
 
@@ -158,12 +162,12 @@ class downMusic:
 		self.logCookie(driver)
 
 
-		driver.get_screenshot_as_file(os.path.join(configParseControl.globalParam.phatomjsSreenShotDir,ur'年假.png'))
+		driver.get_screenshot_as_file(os.path.join(self.screenNowDir,ur'年假.png'))
 		#print "个人打卡数据"
 		self.logger.info("进入个人打卡数据TAB，并记录当前考勤信息")
 		driver.find_element_by_xpath('//*[@id="accordion1"]/div[2]/a[2]').click()
 		time.sleep(10)
-		driver.get_screenshot_as_file(os.path.join(configParseControl.globalParam.phatomjsSreenShotDir,ur'个人打卡数据.png'))
+		driver.get_screenshot_as_file(os.path.join(self.screenNowDir,ur'个人打卡数据.png'))
 		self.logCookie(driver)
 
 		return goodCookie
