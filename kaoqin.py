@@ -210,7 +210,7 @@ class downMusic:
 		res = self.getPostRes(url, urlCookie,data)
 		print res
 if __name__=="__main__":
-	account = '68104'#填写电话号码
-	password= 'Rql*34704'#填写密码
+	account = 'zhanghao'#填写电话号码
+	password= 'mima'#填写密码
 	k9 = downMusic(account,password,'1000')
 	k9.start()
